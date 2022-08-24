@@ -1,0 +1,35 @@
+// do locking to our API
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTcsInVzZXJuYW1lIjoicHJpbmNlX2pvIiwiaWF0IjoxNjU1NjUwMDkzLCJleHAiOjE2NTU2NTAxMjN9.82_gFfYJo2ftRyAxuoDjnVNTJQKobUAqtSHEo0g1r_I
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name" : "adi",
+    "nip" : "1234567890123456",
+    "matkul" : "matematika",
+    "username" : "jiwon01",
+    "password" : "A1_aaaaa",
+    "confPassword" : "12321"
+}
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username" : "prince_jo",
+    "password" : "pangeran29"
+}
+
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE  http://localhost:5000/logout
+

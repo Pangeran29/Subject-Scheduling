@@ -1,0 +1,20 @@
+POST http://localhost:5000/day
+Content-Type: application/json
+
+{
+    "days": "Sabtu"
+}
+
+###
+GET http://localhost:5000/day
+
+###
+POST http://localhost:5000/time
+Content-Type: application/json
+
+{
+    "times": "dfafs"
+}
+
+###
+GET http://localhost:5000/time

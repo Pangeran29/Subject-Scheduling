@@ -1,0 +1,41 @@
+GET http://localhost:5000/subjects
+
+###
+GET http://localhost:5000/subjects/42
+
+###
+GET http://localhost:5000/subject/Selasa
+
+
+###
+POST http://localhost:5000/subject
+Content-Type: application/json
+
+{
+    "subject": "    l",
+    "subject_code": "A119502023",
+    "schedule": "Selasa",
+    "scheduleTime": "11:00"
+}
+
+###
+PATCH http://localhost:5000/subjects/Selasa/23
+Content-Type: application/json
+
+{
+    "subject": "Pengantar Rekayasa Program",
+    "subject_code": "KUI1E3",
+    "schedule": "Selasa",
+    "scheduleTime": "11:00"
+}
+
+###
+DELETE http://localhost:5000/subject/Selasa
+Content-Type: application/json
+
+###
+PATCH http://localhost:5000/subject/Selasa/42
+Content-Type: application/json
+
+###
+DELETE http://localhost:5000/subjects/46

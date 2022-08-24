@@ -1,0 +1,27 @@
+GET http://localhost:5000/students
+
+###
+GET http://localhost:5000/students/1
+
+###
+POST http://localhost:5000/add
+Content-Type: application/json
+
+{
+    "student": "Yehuda Siahaan",
+    "subject": "Matematika",
+    "subjectCode": "MM01"
+}
+
+###
+PATCH  http://localhost:5000/edit/2
+Content-Type: application/json
+
+{
+    "student": "Pangeran Jonathan",
+    "subject": "Rekayasa API",
+    "subjectCode": "RA01"
+}
+
+###
+DELETE http://localhost:5000/delete/4
